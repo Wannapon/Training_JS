@@ -1,38 +1,46 @@
 // function
-var b = 0
+const b = 'Hello2'
 function logtest() {
-    let a = 'Hello'
-
-    return a
+  const a = 'Hello'
+  return a
 }
-var logtest2 = () => b 
+const logtest2 = () => b
 logtest()
 logtest2()
-console.log(logtest(),logtest2())
-
 
 // switch case
-const switchmatch = 1
+let switchmatch = 44
 switch (switchmatch) {
   case 1:
-    console.log('match 1')
+    switchmatch = 2
     break
   case 2:
-    console.log('match 2')
+    switchmatch = 3
     break
   default:
-    console.log('no match -> default')
+    switchmatch = 'Default'
 }
 
-
 // .map
-const arr = [0,1,2]
-const Newarr = arr2.map((arr2) => {
-  return arr2
-})
-
+const people = [
+  {
+    name: 'com',
+    age: 22,
+  },
+  {
+    name: 'puu',
+    age: 22,
+  },
+]
+const newArr = people.map((arr2) => arr2.name)
 
 // calculate
 let number = 0
-number = number + 5
-console.log(number)
+number += 5 // number = number + 5
+
+// split
+const myName = 'wannapon roj'
+const newName = myName.split(' ')
+
+// output
+console.log(logtest(), switchmatch, newArr, number, newName)
